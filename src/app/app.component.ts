@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LanguageSwitchComponent } from './language-switch/language-switch.component';
+import { SampleDisplayComponent } from './sample-display/sample-display.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TranslateModule],
+  imports: [
+    LanguageSwitchComponent,
+    RouterOutlet,
+    TranslateModule,
+    SampleDisplayComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

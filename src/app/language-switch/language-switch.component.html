@@ -1,0 +1,9 @@
+<p>
+  {{ lang }}
+  <select [(ngModel)]="lang" (change)="switchLanguage(lang)">
+    <option value="fr">FR</option>
+    <option value="en">EN</option>
+  </select>
+</p>
+
+<app-sample-display></app-sample-display>
